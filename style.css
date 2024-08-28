@@ -1,0 +1,132 @@
+* {
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+#corpo {
+    height: 500px;
+    width: 1000px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.Dark { 
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.esquerda {
+    background: darkviolet;
+    height: 300px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px violet;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.esquerda h1 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+input, label {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px auto;
+    text-align: left;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#calcular {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: medium; 
+    cursor: pointer;
+    background-color: mediumvioletred;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#calcular:hover {
+    background-color: darkviolet;
+}
+
+.direita {
+    background: darkblue;
+    height: 300px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px blue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fundo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mensagem {
+    font-weight: medium;
+    margin-bottom: 10px;
+}
+
+.resultado {
+    font-weight: x-large;
+    font-size: 3rem;
+    color: limegreen;
+}
+
+.alertaSaude {
+    font-weight: small;
+    font-size: .5rem;
+    color: lightcoral;
+}
+
+@media (max-width: 800px) {
+    #corpo {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        margin-bottom: 20px;
+    }
+}
